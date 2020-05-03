@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.5
+#!/usr/bin/python3
 # encoding: utf-8
 '''
 Created on 16 févr. 2017
