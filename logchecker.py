@@ -39,7 +39,7 @@ class LogChecker():
         files = [f for f in os.listdir(self.__logdir) if re.match(r'.*\.log', f)]
         for f in files:
             try:
-                fd = open(os.path.join(self.__logdir, f), 'r')
+                fd = open(os.path.join(self.__logdir, f), 'r', errors='ignore')
                 for line in fd:
                     if re.search('error', line, re.IGNORECASE):
                         record = {}
